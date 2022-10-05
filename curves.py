@@ -69,7 +69,7 @@ class CurveDataset(utils.Dataset):
         onlyfiles = [f for f in listdir(images_dir) if isfile(join(images_dir, f))]
 
         for i, filename in enumerate(onlyfiles):
-            if i > 10000:
+            if i > 1000:
                 break
             image_path = os.path.join(images_dir, filename)
             image = skimage.io.imread(image_path)
